@@ -1,6 +1,12 @@
-// FUNCTION IMPLEMENTATION
-const assertEqual = require('../assertEqual');
+// 
+const assert = require('chai').assert;
 
-assertEqual("Lighthouse Labs", "Bootcamp");
-assertEqual(1, 1);
+describe('assertEqual', function() {
+  it('returns true if the two strings are not equal', function() {
+    assert.notStrictEqual("Lighthouse Labs", "Bootcamp");
+  });
 
+  it('should assert that two numbers are equal', function() {
+    assert.strictEqual(1, 1);
+  });
+});
