@@ -1,3 +1,5 @@
+const assertEqual = require(`./assertEqual`);
+
 const eqObjects = function(object1, object2) {
   const keys1 = Object.keys(object1);
   const keys2 = Object.keys(object2);
@@ -12,17 +14,6 @@ const eqObjects = function(object1, object2) {
   }
 
   return true;
-};
-
-const assertEqual = function(actual, expected) {
-
-  if (actual !== expected) {
-    console.log(`\u{1F6D1}\u{1F6D1}\u{1F6D1} Assertion Failed: [${actual}] !== [${expected}]`);
-    return;
-  }
-
-  console.log(`\u{2705}\u{2705}\u{2705} Assertion Passed: [${actual}] === [${expected}]`);
-  return;
 };
 
 
