@@ -17,9 +17,11 @@ const eqObjects = function(object1, object2) {
 };
 
 
-const shirtObject = { color: "red", size: "medium" };
-const anotherShirtObject = { size: "medium", color: "red" };
-assertEqual(eqObjects(shirtObject, anotherShirtObject), true); // => true
+// const shirtObject = { color: "red", size: "medium" };
+// const anotherShirtObject = { size: "medium", color: "red" };
+// assertEqual(eqObjects(shirtObject, anotherShirtObject), true); // => true
 
-const longSleeveShirtObject = { size: "medium", color: "red", sleeveLength: "long" };
-assertEqual(eqObjects(shirtObject, longSleeveShirtObject), false); // => false
+// const longSleeveShirtObject = { size: "medium", color: "red", sleeveLength: "long" };
+// assertEqual(eqObjects(shirtObject, longSleeveShirtObject), false); // => false
+
+module.exports = eqObjects;
