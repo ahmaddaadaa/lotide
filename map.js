@@ -1,50 +1,24 @@
-// FUNCTION IMPLEMENTATION
-const assertEqual = function(actual, expected) {
-
-  if (actual !== expected) {
-    console.log(`\u{1F6D1}\u{1F6D1}\u{1F6D1} Assertion Failed: [${actual}] !== [${expected}]`);
-    return;
-  }
-
-  console.log(`\u{2705}\u{2705}\u{2705} Assertion Passed: [${actual}] === [${expected}]`);
-  return;
-};
-
-
-
-const eqArrays = function(arr1, arr2) {
-  if (arr1.length !== arr2.length) {
-    return false;
-  }
-
-  return arr1.every((element, index) => element === arr2[index]);
-};
-
-//assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => should PASS
-
-const assertArraysEqual = function(array1, array2) {
-
-  assertEqual(eqArrays(array1, array2), true);
-
-};
+const assertArraysEqual = require(`./assertArraysEqual`);
 
 
 const map = function(array, callback) {
-  const results = [];
+  const newArray = [];
 
   for (let item of array) {
 
-    results.push(callback(item));
+    newArray.push(callback(item));
   }
 
-  return results;
+  return newArray;
 };
 
 const words = ["ground", "control", "to", "major", "tom"];
-const results1 = map(words, word => word[0]);
+
+// get the first index of each element in Words string array
+const result = map(words, word => word[0]);
 
 
-console.log(results1);
+console.log(result);
 
+assertArraysEqual(result, [ 'g', 'c', 't', 'm', 't' ]);
 
-assertArraysEqual( results1, [ 'g', 'c', 't', 'm', 't' ]); 
