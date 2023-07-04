@@ -1,5 +1,3 @@
-const assertEqual = require(`./assertEqual`);
-
 const eqObjects = function(object1, object2) {
   const keys1 = Object.keys(object1);
   const keys2 = Object.keys(object2);
@@ -17,11 +15,5 @@ const eqObjects = function(object1, object2) {
 };
 
 
-// const shirtObject = { color: "red", size: "medium" };
-// const anotherShirtObject = { size: "medium", color: "red" };
-// assertEqual(eqObjects(shirtObject, anotherShirtObject), true); // => true
-
-// const longSleeveShirtObject = { size: "medium", color: "red", sleeveLength: "long" };
-// assertEqual(eqObjects(shirtObject, longSleeveShirtObject), false); // => false
 
 module.exports = eqObjects;

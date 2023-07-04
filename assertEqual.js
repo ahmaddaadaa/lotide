@@ -1,4 +1,4 @@
-// FUNCTION IMPLEMENTATION
+// FUNCTION IMPLEMENTATION//
 const assertEqual = function(actual, expected) {
 
   if (actual !== expected) {

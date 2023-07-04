@@ -1,6 +1,6 @@
 
-const assertEqual = require(`./assertEqual`);
-
+const index = require(`./index`);
+//
 
 const countKey = function(key, arr) {
   let count = 0;
@@ -43,7 +43,7 @@ const firstNames = [
 
 const result1 = countOnly(firstNames, { "Jason": true, "Karima": true, "Fang": true, "Agouhanna": false });
 
-assertEqual(result1["Jason"], 1);
-assertEqual(result1["Karima"], undefined);
-assertEqual(result1["Fang"], 2);
+index.assertEqual(result1["Jason"], 1);
+index.assertEqual(result1["Karima"], undefined);
+index.assertEqual(result1["Fang"], 2);
 

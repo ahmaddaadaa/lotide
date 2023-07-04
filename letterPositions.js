@@ -20,3 +20,4 @@ const results = letterPositions("Hello World");
 console.log(results);
 assertArrysEqual(results['h'],[0]);
 assertArrysEqual(results['l'],[2,3,9]);
+//

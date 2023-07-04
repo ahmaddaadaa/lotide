@@ -20,7 +20,7 @@ const myObj = {
 };
 
 const keyFound = findKey(myObj, x => x.stars === 2); // => "noma"
-
+///
 
 console.log(keyFound);
 assertEqual(keyFound, 'noma');

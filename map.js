@@ -14,7 +14,7 @@ const map = function(array, callback) {
 
 const words = ["ground", "control", "to", "major", "tom"];
 
-// get the first index of each element in Words string array
+// get the first index of each element in Words string array 
 const result = map(words, word => word[0]);
 
 
