@@ -26,6 +26,6 @@ This project was created and published by me as part of my learnings at Lighthou
 
 The following functions are currently implemented:
 
-* `function1(...)`: description
-* `function2(...)`: description
-* `function3(...)`: description
+* (...)`: description
+* `assertEqual(actual, expected)`: should assert that two inputs are equal
+* `eqArrays(arr1, arr2)`: returns true if the two inpuarrays are equal

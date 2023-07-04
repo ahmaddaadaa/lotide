@@ -1,6 +1,6 @@
 {
   "name": "@ahmaddaadaa/lotide",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "object containing multiple functions for doing assertion checks on arrays",
   "main": "assertArraysEqual.js",
   "directories": {
